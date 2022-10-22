@@ -72,3 +72,83 @@ function sum(a: number, ...nums: number[]): number {
 
 sum(10, 2,3,4,5);    // 24
 ```
+
+<br>
+
+### this
+
+```tsx
+function 함수명(this: 타입) {
+  // ...
+}
+```
+
+<br>
+
+```tsx
+interface Vue {
+	el: string;
+	count: number;
+	init(this: Vue): () => {};
+}
+
+let vm: Vue = {
+	el: '#app',
+	count: 10,
+	init: function(this: Vue) {
+		return () => {
+			return this.count;
+		}
+	}
+}
+
+let getCount = vm.init();
+let count = getCount();
+console.log(count);  // 10
+```
+
+<br>
+
+### 콜백에서의 `this`
+
+콜백으로 함수가 전달되었을때의 `this`를 구분해줘야 한다
+
+```tsx
+// 강제로
+interface UIElement {
+	// 아래 함수의 `this: void` 코드는 함수에 `this` 타입을 선언할 필요 X
+	addClickListener(onclick: (this: void, e: Event) => void): void;
+}
+
+class Handler {
+	info: string;
+	onClick(this: Handler, e: Event) {
+			// 위의 'UIElement' 인터페이스의 스펙에 `this`가 필요없다고 했지만 사용함 -> 에러 발생
+			this.info = e.message;
+	}
+}
+let handler = new Handler();
+UIElement.addClickListener(handler.onClick);   // error!
+
+let ui: UIElement = {
+	addClickListener(onclick);
+}
+ui.addClickListener(handler.onClick);			// error!
+```
+
+<br>
+
+`UIElement` 인터페이스의 스펙에 맞춰 `Handler`를 구현하려면 ⬇️
+
+```tsx
+class Handler2 {
+	info: string;
+	onClick(this: void, e: Event) {
+			// `this`의 타입이 void이기 때문에 여기서 `this` 사용 X
+			console.log('clicked!');
+	}
+}
+
+let handler2 = new Handler2();
+UIElement.addClickListener(handler2.onClick);
+```
