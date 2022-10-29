@@ -54,4 +54,9 @@ function getProperty<T, O extends keyof T>(obj: T, key: O) {
 let obj = { a: 1, b: 2, c: 3};
 
 console.log(getProperty(obj, "a"))      // 1
-getProperty(obj, "z");
+// getProperty(obj, "z");
+
+
+function getSize(arr): number {
+    return arr.length;
+}
