@@ -141,6 +141,42 @@ let myString: GenericLogTextFn<string> = logText;
 
 <br>
 
+예시 2
+
+```tsx
+interface Mobile<T> {
+    name: string;
+    price: number;
+    option: T;
+}
+
+const m1: Mobile<object> = {
+    name: "s21",
+    price: 1000,
+    option: {
+        color: "red",
+        coupon: false,
+    },
+};
+
+const m1_1: Mobile<{color: string; coupon: boolean}> = {
+    name: "s21",
+    price: 1000,
+    option: {
+        color: "red",
+        coupon: false,
+    },
+};
+
+const m2: Mobile<string> = {
+    name: "s20",
+    price: 900,
+    option: "good",
+};
+```
+
+<br>
+
 ## 제네릭 클래스
 
 제네릭 인터페이스와 비슷하다

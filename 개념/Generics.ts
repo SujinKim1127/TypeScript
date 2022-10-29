@@ -60,3 +60,36 @@ console.log(getProperty(obj, "a"))      // 1
 function getSize(arr): number {
     return arr.length;
 }
+
+
+
+/*** 인터페이스 * */
+interface Mobile<T> {
+    name: string;
+    price: number;
+    option: T;
+}
+
+const m1: Mobile<object> = {
+    name: "s21",
+    price: 1000,
+    option: {
+        color: "red",
+        coupon: false,
+    },
+};
+
+const m1_1: Mobile<{color: string; coupon: boolean}> = {
+    name: "s21",
+    price: 1000,
+    option: {
+        color: "red",
+        coupon: false,
+    },
+};
+
+const m2: Mobile<string> = {
+    name: "s20",
+    price: 900,
+    option: "good",
+};
