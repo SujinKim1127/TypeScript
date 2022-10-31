@@ -21,6 +21,8 @@ TypeScript 핸드북을 읽고 정리
 
 [📝타입 별칭](./TypeAliases.md)
 
+[📝조건부 타입](./ConditionalType.md)
+
 <br>
 
 ---
