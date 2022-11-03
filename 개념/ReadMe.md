@@ -23,6 +23,8 @@ TypeScript 핸드북을 읽고 정리
 
 [📝조건부 타입](./ConditionalType.md)
 
+[📝const assertion](./const_assertion.md)
+
 <br>
 
 ---
