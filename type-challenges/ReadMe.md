@@ -10,6 +10,7 @@ https://github.com/type-challenges/type-challenges
 
 [쉬움 / 13]
 <br>
+<a href="easy\4 pick" target="_blank"><img src="https://img.shields.io/badge/-4%E3%83%BBPick-7aad0c" alt="4・Pick"/></a>
 <a href="easy\14 Fisrt of Array" target="_blank"><img src="https://img.shields.io/badge/-14%E3%83%BBFirst%20of%20Array-7aad0c" alt="14・First of Array"/></a>
 <a href="easy\18 tuple length" target="_blank"><img src="https://img.shields.io/badge/-18%E3%83%BBTuple%20length-7aad0c" alt="18・Tuple length"/></a>
 
