@@ -18,6 +18,7 @@ https://github.com/type-challenges/type-challenges
 <a href="easy\43 Exclude" target="_blank"><img src="https://img.shields.io/badge/-43%E3%83%BBExclude-7aad0c" alt="43・Exclude"/></a>
 <a href="easy\268 If" target="_blank"><img src="https://img.shields.io/badge/-268%E3%83%BBIf-7aad0c" alt="268・If"/></a>
 <a href="easy\533 Concat" target="_blank"><img src="https://img.shields.io/badge/-533%E3%83%BBConcat-7aad0c" alt="533・Concat"/></a>
+<a href="easy\3057 Push" target="_blank"><img src="https://img.shields.io/badge/-3057%E3%83%BBCPush-7aad0c" alt="3057・Push"/></a>
 
 
 <br>
