@@ -26,6 +26,4 @@ https://github.com/type-challenges/type-challenges
 
 [보통 / 72]
 <br>
-<!-- 
- <a href="medium\15 Last" target="_blank"><img src="https://img.shields.io/badge/-15%E3%83%BBLast-d9901a" alt="15・Last"/></a>
- -->
+<a href="medium\15 Last" target="_blank"><img src="https://img.shields.io/badge/-15%E3%83%BBLast-d9901a" alt="15・Last"/></a>
