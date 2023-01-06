@@ -1,0 +1,76 @@
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  flex: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.header input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+}
+
+.header button {
+  width: 70px;
+  height: 87px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.todoList {
+  flex: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  color: black;
+  margin: 15px;
+}
+
+.task content {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-items: column;
+}
+
+.task .content span {
+  align-items: column;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  margin: 20px;
+}
+
+.task button {
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
