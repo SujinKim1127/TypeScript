@@ -1,7 +1,7 @@
 import React, { FC, ChangeEvent, useState } from "react";
-import "./App.css";
 import { ITask } from "./Interfaces";
 import TodoTask from "./Components/TodoTask";
+import './App.css'
 
 const App: FC = () => {
   const [task, setTask] = useState<string>("");
@@ -35,8 +35,8 @@ const App: FC = () => {
   };
 
   return (
-    <div className="App">
-      <div className="header">
+    <div className="App font-mono">
+      <div className="header bg-sky-100">
         <div className="inputContainer">
           <input
             type="text"
@@ -53,7 +53,7 @@ const App: FC = () => {
             onChange={handleChange}
           />
         </div>
-        <button onClick={addTask}>Add Task</button>
+        <button className="bg-sky-300" onClick={addTask}>Add Task</button>
       </div>
       <div className="todoList">
         {todoList.map((task: ITask, key: number) => {
